@@ -3,109 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="medical-symbol (1).png"> 
+        <!-- Add Favicon -->
+        <link rel="icon" type="image/png" href="medical-symbol (1).png"> 
+   
+
     <script src="https://kit.fontawesome.com/c1df782baf.js"></script>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
-    <title>Hospital Management Website</title>
     <link rel="stylesheet" href="style.css">
+
+    <title>Hospital management website</title>
 </head>
 <body>
 
     <header>
-        <div class="logo"><img src="logo5.png" alt="Hospital Logo"></div>
+
+        <div class="logo"><img src="logo5.png" alt=""></div>
+
         <nav class="navbar">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#doctors">Doctors</a>
             <a href="#services">Services</a>
             <a href="#reviews">Reviews</a>
+            <!-- <a href="#contact">Contact</a> -->
         </nav>
-        <div class="right-icons">
-            <div id="menu-bars" class="fas fa-bars"></div>
-            <div class="appointment-Btn" id="openAppointmentModal">Make Appointment</div>
-        </div>
+<!-- Appointment Modal -->
+       <div class="right-icons">
+    <div id="menu-bars" class="fas fa-bars"></div>
+    <div class="appointment-Btn" id="openAppointmentModal">Make Appointment</div>
+</div>
+
+<!-- Appointment Modal -->
+<div id="appointmentModal" class="appointment-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Book Your Appointment</h2>
+        <form id="appointmentForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="appointment-date">Preferred Date</label>
+            <input type="date" id="appointment-date" name="date" required>
+
+            <label for="appointment-time">Preferred Time</label>
+            <input type="time" id="appointment-time" name="time" required>
+
+            <button type="submit" class="submit-btn">Submit Appointment</button>
+        </form>
+    </div>
+</div>
+
+
+
     </header>
 
-    <!-- Appointment Modal -->
-    <div id="appointmentModal" class="appointment-modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Book Your Appointment</h2>
-            <form id="appointmentForm">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <!-- header section ended -->
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <!-- Home section started -->
 
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone" required>
+      <div class="main-home">
 
-                <label for="appointment-date">Preferred Date</label>
-                <input type="date" id="appointment-date" name="date" required>
-
-                <label for="appointment-time">Preferred Time</label>
-                <input type="time" id="appointment-time" name="time" required>
-
-                <button type="submit" class="submit-btn">Submit Appointment</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Home Section -->
-    <div class="main-home" id="home">
-        <div class="home">
+          <div class="home" id="home">
             <div class="home-left-content">
                 <span>Welcome to Hospital Management</span>
-                <h2>We Take Care of Your Health</h2>
-                <p>Welcome to our hospital, a place where health and well-being come first. Our mission is to provide exceptional medical care with compassion, dignity, and respect for every individual who comes through our doors.</p>
-            </div>
-            <div class="home-right-content">
-                <img src="about4.jpg" alt="Medical Care">
-            </div>
-        </div>
-    </div>
+                <h2>We take care our <br> Patient healths</h2>
+                <p class="lorem">Welcome to our hospital, a place where health and well-being come first.
+                     Our mission is to provide exceptional medical care with compassion, dignity, and respect
+                      for every individual who comes through our doors. At the heart of our hospital is a team of 
+                      dedicated healthcare professionals, each committed to improving the lives of our patient.</p>
 
-    <!-- Technology Section -->
-    <div class="technology">
+                   
+            </div>
+
+            <div class="home-right-content">
+                <img src="images/about4.jpg" alt="">
+            </div>
+          </div>
+      </div>
+
+      <div class="technology">
         <div class="main-technology">
             <div class="inner-technology">
                 <i class="fi fi-tr-hands-heart"></i>
-                <h2>Quality & Safety</h2>
-                <p>Our hospital utilizes state-of-the-art technology and employs a team of true experts dedicated to your health.</p>
+                <h2>Quality & safety</h2>
+                <p>Our delmont hospital utillizes state of art technology and employs a team of true expert. </p>
             </div>
 
             <div class="inner-technology">
                 <i class="fi fi-tr-artificial-intelligence"></i>
-                <h2>Advanced Technology</h2>
-                <p>We use cutting-edge AI and modern equipment to provide accurate diagnosis and effective treatments.</p>
+                <h2>Quality & safety</h2>
+                <p>Our delmont hospital utillizes state of art technology and employs a team of true expert. </p>
             </div>
 
             <div class="inner-technology">
                 <i class="fi fi-tr-user-md"></i>
-                <h2>Expert Doctors</h2>
-                <p>Our team consists of highly qualified specialists committed to providing the best medical care possible.</p>
+                <h2>Quality & safety</h2>
+                <p>Our delmont hospital utillizes state of art technology and employs a team of true expert. </p>
             </div>
         </div>
-    </div>
+      </div>
 
-    <!-- About Section -->
-    <div class="main-about" id="about">
+     <!-- how section will ends -->
+
+     <!-- About us section started -->
+
+     <div class="main-about" id="about">
         <div class="inner-main-about">
-            <div class="about-inner-content-left">
-                <img src="about2.jpg" alt="Hospital Interior">
+           <div class="about-inner-content-left">
+                <img src="images/about2.jpg" alt="">
             </div>
+
             <div class="about-inner-content">
                 <div class="about-right-content">
-                    <h2>We're Setting Standards in Research and Clinical Care</h2>
-                    <p>We provide the most comprehensive medical services, ensuring every person has the opportunity to receive quality healthcare.</p>
-                    <p>Our clinic has grown to provide a world-class facility for treatment, dental cosmetics, and advanced restorative care. We are among the most qualified providers with over 30 years of training and experience.</p>
+                    <h2>We're setting Standard in Research <br> what's more, Clinical Care.</h2>
+                    <p>We provide the most full medical services, so every person could have thr aportunity
+                         receive qualitative medical help.</p>
+                    <p class="aboutsec-content">
+                        our clinic has grown to provide a wolrd class facility for the treatment of toothloos,
+                        dental cosmetic and more advanced restrotive dentistry. We are among the most qualified
+                        implant providers in the aus with over 30 year of utality training and expreience.
+                    </p>    
                     <button class="aboutbtn">Read More</button>
                 </div>
             </div>
         </div>
-    </div>
+     </div>
 
+
+
+  <!-- About us section ends --> 
+  
+
+
+  
     <!-- Emergency Services Section -->
     <div class="emergency-section">
         <h2>24/7 Emergency Services</h2>
@@ -128,9 +164,8 @@
             </div>
         </div>
     </div>
-
-    <!-- Doctors Section -->
-    <div class="main-doctors" id="doctors">
+  <!--  our doctors -->
+ <div class="main-doctors" id="doctors">
         <div class="doctors-heading">
             <h2>Our Expert Doctors</h2>
         </div>
@@ -227,63 +262,81 @@
         </div>
     </div>
 
-    <!-- Services Section -->
-    <div class="our-services" id="services">
-        <div class="services-heading">
-            <h2>Our Services</h2>
-        </div>
-        <div class="main-services">
-            <div class="inner-services">
-                <div class="service-icon">
-                    <i class="fa-solid fa-truck-medical"></i>
-                </div>
-                <h3>Emergency Care</h3>
-                <p>We offer comprehensive emergency medical procedures with outbound & inbound patient care. Available 24/7 for critical situations.</p>
-            </div>
+  <!-- our doctors ended -->
 
-            <div class="inner-services">
-                <div class="service-icon">
-                    <i class="fa-regular fa-hospital"></i>
-                </div>
-                <h3>Inpatient Services</h3>
-                <p>State-of-the-art facilities with comfortable rooms and advanced monitoring systems for your recovery.</p>
-            </div>
 
-            <div class="inner-services">
-                <div class="service-icon">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <h3>Cardiac Care</h3>
-                <p>Specialized cardiac treatments with cutting-edge technology and experienced cardiologists on staff.</p>
-            </div>
+  
 
-            <div class="inner-services">
-                <div class="service-icon">
-                    <i class="fa-solid fa-user-doctor"></i>
-                </div>
-                <h3>Expert Consultation</h3>
-                <p>Connect with our specialist doctors for comprehensive health assessments and treatment plans.</p>
-            </div>
-
-            <div class="inner-services">
-                <div class="service-icon">
-                    <i class="fa-solid fa-x-ray"></i>
-                </div>
-                <h3>Diagnostic Services</h3>
-                <p>Advanced imaging and laboratory services for accurate diagnosis and treatment monitoring.</p>
-            </div>
-
-            <div class="inner-services">
-                <div class="service-icon">
-                    <i class="fa-solid fa-pills"></i>
-                </div>
-                <h3>Pharmacy</h3>
-                <p>On-site pharmacy with a wide range of medications and experienced pharmacists for consultation.</p>
-            </div>
-        </div>
+  <!-- Our services -->
+ 
+  <div class="our-services" id="services">
+    <div class="services-heading">
+        <h2>Our Services</h2>
     </div>
 
-    <!-- Statistics Section -->
+    <div class="main-services">
+        <div class="inner-services">
+            <div class="service-icon">
+                <i class="fa-solid fa-truck-medical"></i>
+            </div>
+            <h3>Health Check</h3>
+            <p>we offer expensive medical procedure to outbound & inbound patient
+                 what it is and we are very proud achieveement staff.</p>
+        </div>
+
+        <div class="inner-services">
+            <div class="service-icon">
+                <i class="fa-regular fa-hospital"></i>
+            </div>
+            <h3>Health Check</h3>
+            <p>we offer expensive medical procedure to outbound & inbound patient
+                 what it is and we are very proud achieveement staff.</p>
+        </div>
+
+        <div class="inner-services">
+            <div class="service-icon">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <h3>Health Check</h3>
+            <p>we offer expensive medical procedure to outbound & inbound patient
+                 what it is and we are very proud achieveement staff.</p>
+        </div>
+
+        <div class="inner-services">
+            <div class="service-icon">
+                <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <h3>Health Check</h3>
+            <p>we offer expensive medical procedure to outbound & inbound patient
+                 what it is and we are very proud achieveement staff.</p>
+        </div>
+
+        <div class="inner-services">
+            <div class="service-icon">
+                <i class="fa-solid fa-truck-medical"></i>
+            </div>
+            <h3>Health Check</h3>
+            <p>we offer expensive medical procedure to outbound & inbound patient
+                 what it is and we are very proud achieveement staff.</p>
+        </div>
+
+        <div class="inner-services">
+            <div class="service-icon">
+                <i class="fa-solid fa-truck-medical"></i>
+            </div>
+            <h3>Health Check</h3>
+            <p>we offer expensive medical procedure to outbound & inbound patient
+                 what it is and we are very proud achieveement staff.</p>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- our services ennded -->
+
+
+
+   <!-- Statistics Section -->
     <div class="statistics-section">
         <div class="stats-container">
             <div class="stat-box">
@@ -309,116 +362,156 @@
         </div>
     </div>
 
-    <!-- Reviews Section -->
-    <div class="main-reviews" id="reviews">
-        <div class="review-heading">
-            <h1>Patient Testimonials</h1>
-        </div>
-        <div class="review-inner-content">
-            <div class="review-box">
-                <img src="pic1.png" alt="Patient">
-                <h2>Lara Johnson</h2>
-                <div class="review-star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p>Exceptional care and attention! The doctors were incredibly professional and the staff made me feel comfortable throughout my treatment. Highly recommended!</p>
-            </div>
 
-            <div class="review-box">
-                <img src="pic2.png" alt="Patient">
-                <h2>Akshay Singh</h2>
-                <div class="review-star">
+  <!-- Customer review -->
+
+     <div class="main-reviews" id="reviews">
+        <div class="review-heading">
+            <h1>Our Customer Review</h1>
+        </div>
+
+        <div class="main-inner-review">
+
+            <div class="review-inner-content">
+              <div class="review-box">
+                <img src="images/pic1.png" alt="">
+
+                <h2>Lara john</h2>
+
+                  <div class="review-star">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-regular fa-star"></i>
+                  </div>
+    
+                <div class="review-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas et ipsam obcaecati cupiditate laborum soluta, sed eos rem exercitationem id laboriosam nesciunt nobis maiores mollitia, est commodi, earum iure aspernatur!</p>
                 </div>
-                <p>The emergency services here are outstanding. They responded quickly and provided excellent care during a critical moment. Forever grateful to the team!</p>
+              </div>
+
+              <div class="review-box">
+                <img src="images/pic2.png" alt="">
+
+                <h2>Akshay singh</h2>
+
+                  <div class="review-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+    
+                <div class="review-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas et ipsam obcaecati cupiditate laborum soluta, sed eos rem exercitationem id laboriosam nesciunt nobis maiores mollitia, est commodi, earum iure aspernatur!</p>
+                </div>
+              </div>
+
+
+              <div class="review-box">
+                <img src="images/pic3.png" alt="">
+
+                <h2>komal jhaa</h2>
+
+                  <div class="review-star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+    
+                <div class="review-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas et ipsam obcaecati cupiditate laborum soluta, sed eos rem exercitationem id laboriosam nesciunt nobis maiores mollitia, est commodi, earum iure aspernatur!</p>
+                </div>
+              </div>
+
+
+
+
+
             </div>
 
-            <div class="review-box">
-                <img src="pic3.png" alt="Patient">
-                <h2>Komal Jha</h2>
-                <div class="review-star">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p>Modern facilities combined with compassionate care. The doctors took time to explain everything and made sure I was comfortable. Best hospital experience ever!</p>
+        </div>
+     </div>
+  <!-- customer review -->
+
+  <!-- Footer -->
+
+  <div class="main-footer">
+    <div class="footer-inner">
+        <!-- Quick Links Section -->
+        <div class="footer-content">
+            <h1>Quick Links</h1>
+            <div class="Link">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#doctors">Doctors</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <!-- Services Section -->
+        <div class="footer-content">
+            <h1>Our Services</h1>
+            <div class="Link">
+                <a href="#services">Emergency Care</a>
+                <a href="#services">Health Checkups</a>
+                <a href="#services">Cardiac Care</a>
+                <a href="#services">Consultations</a>
+                <a href="#services">Specialist Treatments</a>
+            </div>
+        </div>
+
+        <!-- Contact Us Section -->
+        <div class="footer-content">
+            <h1>Contact Us</h1>
+            <div class="Link">
+                <p>Phone: +1-800-123-456</p>
+                <p>Email: info@hospital.com</p>
+                <p>Address: 123 Healthcare Avenue, City, Country</p>
+            </div>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-content">
+            <h1>Follow Us</h1>
+            <div class="Link">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://youtube.com" target="_blank">YouTube</a>
+            </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="footer-content">
+            <h1>Newsletter</h1>
+            <div class="Link">
+                <p>Subscribe to our newsletter for the latest updates and health tips.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Footer -->
-    <div class="main-footer">
-        <div class="footer-inner">
-            <div class="footer-content">
-                <h1>Quick Links</h1>
-                <div class="Link">
-                    <a href="#home">Home</a>
-                    <a href="#about">About Us</a>
-                    <a href="#services">Services</a>
-                    <a href="#doctors">Doctors</a>
-                    <a href="#reviews">Reviews</a>
-                </div>
-            </div>
 
-            <div class="footer-content">
-                <h1>Our Services</h1>
-                <div class="Link">
-                    <a href="#services">Emergency Care</a>
-                    <a href="#services">Health Checkups</a>
-                    <a href="#services">Cardiac Care</a>
-                    <a href="#services">Consultations</a>
-                    <a href="#services">Diagnostic Services</a>
-                </div>
-            </div>
-
-            <div class="footer-content">
-                <h1>Contact Us</h1>
-                <div class="Link">
-                    <p>Phone: +1-800-123-456</p>
-                    <p>Email: info@hospital.com</p>
-                    <p>Address: 123 Healthcare Avenue, City, Country</p>
-                </div>
-            </div>
-
-            <div class="footer-content">
-                <h1>Follow Us</h1>
-                <div class="Link">
-                    <a href="https://facebook.com" target="_blank">Facebook</a>
-                    <a href="https://twitter.com" target="_blank">Twitter</a>
-                    <a href="https://instagram.com" target="_blank">Instagram</a>
-                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-
-            <div class="footer-content">
-                <h1>Newsletter</h1>
-                <div class="Link">
-                    <p>Subscribe for health tips and updates.</p>
-                    <form>
-                        <input type="email" placeholder="Your email" required>
-                        <button type="submit">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Hospital Management. All Rights Reserved. | Designed with ❤️</p>
-        </div>
-    </div>
-
-    <script>
         
-    </script>
+    </div>
+</div>
+
+
+
+  <!-- Footer ended -->
+
+    <script src="script.js"></script>
+    
 </body>
 </html>
-
