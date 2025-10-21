@@ -28,23 +28,22 @@
         }
 
         /* Header Styles */
-        header{
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 7%;
-            width: 100%;
-            box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-            z-index: 1000;
-            background-color: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            animation: slideDown 0.5s ease;
-        }
+      header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    z-index: 1000;
+    background-color: rgb(255, 255, 255) !important;
+
+}
         @keyframes slideDown {
             from {
                 transform: translateY(-100%);
@@ -1162,3 +1161,4 @@
                 font-size: 3rem;
             }
         }
+
